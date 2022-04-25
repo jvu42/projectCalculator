@@ -1,0 +1,19 @@
+
+#buttons{
+    border: inset black 2px;
+    margin: 100px;
+    padding: 20px;
+    width:fit-content;
+}
+.screen{
+    border: inset black 2px;
+    margin: 100px;
+    padding: 20px;
+    text-align: right;
+    width:20%
+}
+td{
+    padding:20px;
+    border: outset black 3px;
+    font-size: large;
+}
