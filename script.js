@@ -22,9 +22,8 @@ function getInput() {
         case '7':
         case '8':
         case '9':
-        case '.':
                 if (!finishCalc){
-                    if(digitString == 0){
+                    if(digitString == '0'){
                         digitString = currentDigit;
                     }
                     else{
@@ -36,6 +35,20 @@ function getInput() {
                     finishCalc = false;
                 }
             break;
+        case '.':
+            if (!finishCalc){
+                if(digitString == '0'){
+                    digitString = '0.';
+                }
+                else{
+                    digitString += currentDigit;
+                }
+            }
+            else{
+                digitString = currentDigit;
+                finishCalc = false;
+            }
+        break;
         case  '/':
         case  '*':
         case  '-':
